@@ -1,0 +1,51 @@
+{
+  "name": "llamapilot",
+  "displayName": "llamapilot",
+  "description": "copilot but llama",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "llamapilot.engage",
+      "title": "Engage LLaMAPilot"
+    }],
+    "configuration": {
+      "title": "LLaMAPilot",
+      "properties": {
+        "llamapilot.llamaModel": {
+          "type": "string",
+          "default": "./models/7B/ggml-model-q4_0.bin",
+          "description": "Path to the model file, corresponding to -m argument of llama.cpp"
+        },
+        "llamapilot.llamaFolder": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to pre-built llama.cpp folder, e.g. '/Users/ollin/Desktop/llama.cpp'"
+        },
+        "llamapilot.tokenCount": {
+          "type": "number",
+          "default": 256,
+          "description": "Number of tokens to generate at a time"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.76.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "eslint": "^8.34.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.5",
+    "@vscode/test-electron": "^2.2.3"
+  }
+}

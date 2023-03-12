@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+# what does all of this stuff do omg
+package-lock.json
+.vscode
+.eslintrc.json
+.vscodeignore
