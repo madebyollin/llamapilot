@@ -9,7 +9,9 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+		"*"
+	],
   "main": "./extension.js",
   "contributes": {
     "commands": [{
@@ -31,7 +33,7 @@
         },
         "llamapilot.tokenCount": {
           "type": "number",
-          "default": 256,
+          "default": 64,
           "description": "Number of tokens to generate at a time"
         }
       }
