@@ -2,4 +2,4 @@
 
 copilot but llama?
 
-![](llamapilot_demo.mp4)
+![](llamapilot_demo.gif)
